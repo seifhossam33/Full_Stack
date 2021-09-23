@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>حاسبة المتوسط</title>
+
+        <link rel="stylesheet"
+			  type="text/css"
+			  href="bootstrap.css"
+		      />
+
+        <link rel="stylesheet"
+            type="text/css"
+            href="index.css"
+              />	
+    </head>
+    <body>
+      <h1>ادخل البيانات</h1>
+      <br>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="Leftside">
+                <table>
+                  <tr>
+                    <th>تكلفة مركزك</th>
+                    <td id="answer1"></td>
+                  </tr>
+                  <tr>
+                    <th>قيمة مركزك عند الدعم</th>
+                    <td id="answer2"></td>
+                  </tr>
+                  <tr>
+                    <th>قيمة الخسارة</th>
+                    <td id="answer3"></td>
+                  </tr>
+                  <tr>
+                    <th>قيمة الارتداد في السهم</th>
+                    <td id="answer4"></td>
+                  </tr>
+                  <tr>
+                    <th>تحتاج الى كمية اسهم</th>
+                    <td id="answer5"></td>
+                  </tr>
+                  <tr>
+                    <th>تحتاج الى سيولة تكلفة</th>
+                    <td id="answer6"></td>
+                  </tr>
+                  <tr>
+                    <th>عند البيع بالسعر المتوقع للسهم</th>
+                    <td id="answer7"></td>
+                  </tr>
+                  <tr>
+                    <th>الربح المتوقع</th>
+                    <td id="answer8"></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="Righside">
+              <form>
+                <div>
+                  <label for="b2">سعر الشراء</label>
+                  <input type="number" name="valueOne"  id="valueOne" step="0.01"/>
+              </div>
+              <br>
+              <div>
+                  <label for="b3">الكمية</label>
+                  <input type="number" name="valueTwo"  id="valueTwo" step="0.01"/>
+              </div>
+              <br>
+              <div>
+                  <label for="b4">الدعم  لعمل متوسط</label>
+                  <input type="number" name="valueThree"  id="valueThree" step="0.01"/>
+              </div>
+              <br>  
+              <div>
+                  <label for="b5">السعر المتوقع للارتداد</label>
+                  <input type="number" name="valueFour"  id="valueFour" step="0.01"/>
+              </div>
+              <br>    
+              <button type="button" onclick="Calculate1()">اعرض النتائج </button><br>
+              
+              </form>
+            </div>
+          </div>
+        </div>
+
+    <script src="index.js"></script>
+    </body>
+ 
+</html>
